@@ -1,0 +1,13 @@
+body {
+    front-family: Arial, Helvetics, sans-serif ;
+    background-color: rgb(238, 172, 172);
+}
+underliine{
+    text-decoration: underline;
+}
+itallic{
+    font-style: itallic
+}
+footer{
+    color:blueviolet
+}
