@@ -1,16 +1,44 @@
 body {
-    front-family: Arial, Helvetics, sans-serif ;
-    background-color:#7ca681;
+    font-family: Arial, sans-serif;
+    background-color: #d8a2a2; /* Light background */
+    color: #333; /* Dark text */
+    margin: 0;
+    padding: 0;
 }
-underliine{
-    text-decoration: underline;
-    main {
-        color: #020202;
-    }
+h1.main-title {
+    color: rgb(133, 46, 46); /* Red color for main title */
+    text-align: center;
 }
-itallic{
-    font-style: itallic
+h2 {
+    color: rgb(15, 80, 14); /* Dark green color */
 }
-footer{
-    color:rgb(35, 18, 52)
+.highlight-green {
+    color: green;
+}
+.highlight-brown {
+    color: brown;
+}
+ul {
+    font-size: 18px;
+}
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+nav a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    background-color: #3498db; /* Blue background */
+    text-decoration: none;
+    margin-top: 20px;
+}
+nav a:hover {
+    background-color: #2980b9; /* Darker blue on hover */
 }
