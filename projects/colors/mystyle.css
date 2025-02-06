@@ -1,13 +1,16 @@
 body {
     front-family: Arial, Helvetics, sans-serif ;
-    background-color:#e0e0e0;
+    background-color:#7ca681;
 }
 underliine{
     text-decoration: underline;
+    main {
+        color: #020202;
+    }
 }
 itallic{
     font-style: itallic
 }
 footer{
-    color:blueviolet
+    color:rgb(35, 18, 52)
 }
