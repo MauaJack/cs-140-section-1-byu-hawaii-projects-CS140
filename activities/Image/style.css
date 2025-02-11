@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(9, 9, 236);
+    background-image: url('background.jpeg');
+}
+mystyle {
+    list-style-type: circle;
+    list-style-image: url('beach.jpeg;')
+}
+header {
+    color: rgb(0, 0, 0);
+    background-image: url('beach.jpeg');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
