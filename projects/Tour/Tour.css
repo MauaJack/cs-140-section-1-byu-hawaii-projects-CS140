@@ -13,10 +13,13 @@ header{
     background-repeat: no-repeat;
     background-position: bottom right;
 }
+nav {
+    list-style-image: url(traveltour.jpeg);
+}
 main {
-    color: rgb(213, 9, 9);
+    color: rgb(10, 33, 15);
 }
 
 footer {
-    color: #120250;
+    color: #b40657;
 }
