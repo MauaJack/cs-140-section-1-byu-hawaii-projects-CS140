@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: rgb(156, 62, 245);
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+
+nav {
+    background: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+
+.card {
+    border: thin solid #380316;
+    box-shadow: 3px 3px 3px rgba(40, 40, 40, 0.5);
+    width: 80%;
+    max-width: 250px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px;
+    background: #fff;
+}
+
+.card figure {
+    margin: 0;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #af3636;
+    color: white;
+}
