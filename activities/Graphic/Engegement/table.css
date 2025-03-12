@@ -1,3 +1,31 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
+.schedule{
+    border: 3px solid #000;
+    box-shadow: 3px 3px 3px rgba(30, 30, 30, 0, 5);
+    caption-side: bottom;
+    border-spacing: 0;
+    border-collapse:collapse ;
+}
+.schedule tr{
+    background-color: rgb(148, 148, 179);
+}
+.schedule th,  .schedule td{
+    border: thin solid #000;
+    background-color: rgb(173, 107, 235);
+    padding: 10px;
+}
+.schedule th{
+    background-color: rgb(22, 187, 187);
+}
+.schedule tfoot tr {
+    background-color: rgb(44, 174, 174);
+    color: #fff;
+}
+.schedule tbody tr:nth-child(even) {
+    background-color: rgb(229, 255, 0);
+}
+.main p:first-letter{
+  font-size: 30px;
+}
