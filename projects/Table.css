@@ -33,7 +33,7 @@ main {
 
 .sidebar {
     flex: 1;
-    background: #4db328;
+    background: #67c245;
     padding: 15px;
 }
 
@@ -52,7 +52,7 @@ caption {
 }
 
 th {
-    background: #cd2727;
+    background: #5f0b0b;
     color: rgb(255, 255, 255);
     padding: 10px;
 }

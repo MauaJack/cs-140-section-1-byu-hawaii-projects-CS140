@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <header>
+        <h1> WEB DESIGN</h1>
+    </header>
+    <main>
+        <form action="processing.html" method="get">
+            <div>
+           First Name: <input type="text" name="FirstName" required placeholder="FirstName">
+        </div>
+        <div>
+           Email: <input type="text" name="Email">
+        </div>
+        <div>
+            <label for="pass">Password</label>
+            <input type="password" name="password" id="pass">
+        </div>
+        <div>
+            <label for=" state">state</label>
+            <select name="state" id="state"><
+            <option value="blank">state</option>
+            <option value="CO">Colorado</option>
+            <option value="HI">Hawaii</option>
+            <Option value="PNG">Papua New Guinea</Option>
+            </select>
+        </div>
+        <div>
+            <div>Year in School</div>
+            <label> <input type="radio" name="Year" value="Freshmen">Freshmen</label>
+            <label><input type="radio" name="Year" value="Sophmore">Sophmore</label>
+        </div>
+        <div class="form-row">
+           <input type="submit">
+        </div>
+        </form>
+
+
+
+        <h1> EGAGEMENT</h1>
+        <ol class="1">
+            <li>The form tag has an "action" attribute. What does it do?<p>The action attribute in a <form> tag specifies the URL where the form's data will be sent when submitted.</p></li>
+            <li>The form tag has a "method" attribute. What does it do?<p>The method attribute in a <form> tag specifies the HTTP method (GET or POST) used to send the form's data to the server.</p></li>
+            <li>What is the difference between a "POST" and a "GET"?<p>The main differences between POST and GET are:
+
+                GET: Sends data via the URL query string, making it visible in the address bar. It's best for retrieving data and should not be used for sensitive information.
+                POST: Sends data in the request body, keeping it hidden from the URL. It's more secure and used for submitting forms, uploading files, and modifying data on the server.</p></li>
+        </ol>
+    </main>
+    <footer>
+        &copy; Maua Benson Jack
+    </footer>
+    
+</body>
+</html>
