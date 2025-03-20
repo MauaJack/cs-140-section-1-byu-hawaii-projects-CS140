@@ -4,57 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+    <link rel="stylesheet" href="Form.css">
 </head>
 <body>
     <header>
-        <h1> WEB DESIGN</h1>
+        <h1>WEB DESIGN</h1>
     </header>
     <main>
         <form action="processing.html" method="get">
-            <div>
-           First Name: <input type="text" name="FirstName" required placeholder="FirstName">
-        </div>
-        <div>
-           Email: <input type="text" name="Email">
-        </div>
-        <div>
-            <label for="pass">Password</label>
-            <input type="password" name="password" id="pass">
-        </div>
-        <div>
-            <label for=" state">state</label>
-            <select name="state" id="state"><
-            <option value="blank">state</option>
-            <option value="CO">Colorado</option>
-            <option value="HI">Hawaii</option>
-            <Option value="PNG">Papua New Guinea</Option>
-            </select>
-        </div>
-        <div>
-            <div>Year in School</div>
-            <label> <input type="radio" name="Year" value="Freshmen">Freshmen</label>
-            <label><input type="radio" name="Year" value="Sophmore">Sophmore</label>
-        </div>
-        <div class="form-row">
-           <input type="submit">
-        </div>
+            <fieldset>
+                <legend>Account Info</legend>
+                <div>
+                    First Name: <input type="text" name="FirstName" required placeholder="First Name">
+                </div>
+                <div>
+                    Email: <input type="text" name="Email">
+                </div>
+                <div>
+                    <label for="pass">Password</label>
+                    <input type="password" name="password" id="pass">
+                </div>
+                <div>
+                    <label for="state">State</label>
+                    <select name="state" id="state">
+                        <option value="blank">Select State</option>
+                        <option value="CO">Colorado</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="PNG">Papua New Guinea</option>
+                    </select>
+                </div>
+                <div class="radio-row">
+                    <div class="form-space">Year in School</div>
+                    <label><input type="radio" name="Year" value="Freshmen"> Freshman</label>
+                    <label><input type="radio" name="Year" value="Sophomore"> Sophomore</label>
+                </div>
+                <div class="form-row">
+                    <label><input type="checkbox" name="Agree" id="Agree" checked> Remember Me</label>
+                </div>
+                <div class="form-row">
+                    <label for="comments">Comments</label>
+                    <textarea name="comments" id="comments"></textarea>
+                </div>
+                <div class="form-row">
+                    <input type="submit" value="Submit">
+                </div>
+            </fieldset>
         </form>
 
-
-
-        <h1> EGAGEMENT</h1>
-        <ol class="1">
-            <li>The form tag has an "action" attribute. What does it do?<p>The action attribute in a <form> tag specifies the URL where the form's data will be sent when submitted.</p></li>
-            <li>The form tag has a "method" attribute. What does it do?<p>The method attribute in a <form> tag specifies the HTTP method (GET or POST) used to send the form's data to the server.</p></li>
-            <li>What is the difference between a "POST" and a "GET"?<p>The main differences between POST and GET are:
-
-                GET: Sends data via the URL query string, making it visible in the address bar. It's best for retrieving data and should not be used for sensitive information.
-                POST: Sends data in the request body, keeping it hidden from the URL. It's more secure and used for submitting forms, uploading files, and modifying data on the server.</p></li>
+        <h1>ENGAGEMENT</h1>
+        <ol class="engagement-list">
+            <li>What are different ways to style your form?<p>You can style your form using CSS (external, internal, or inline), frameworks like Bootstrap, Flexbox or Grid for layout, and JavaScript for interactive effec</p></li>
+            <li>Why does the professor like to use flex?<p>Professors often prefer Flexbox because it makes it easier to create responsive, flexible, and well-aligned layouts without using complex positioning or float techniques.</p></li>
         </ol>
     </main>
     <footer>
         &copy; Maua Benson Jack
     </footer>
-    
 </body>
 </html>
