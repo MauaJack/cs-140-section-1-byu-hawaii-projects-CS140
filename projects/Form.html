@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Form</title>
+    <link rel="stylesheet" href="Form.css">
+</head>
+<body>
+
+    <header>
+        <h1>WEB DESIGN</h1>
+    </header>
+
+    <main>
+        <form action="processing.html" method="get">
+            <fieldset>
+                <legend>Account Info</legend>
+
+                <div class="form-group">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="FirstName" required placeholder="First Name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="Email" required placeholder="example@email.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="(123) 456-7890">
+                </div>
+
+                <div class="form-group">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="pass">Password:</label>
+                    <input type="password" id="pass" name="password" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="state">State:</label>
+                    <select id="state" name="state">
+                        <option value="">Select State</option>
+                        <option value="CO">Colorado</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="PNG">Papua New Guinea</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Year in School:</label>
+                    <label><input type="radio" name="Year" value="Freshman"> Freshman</label>
+                    <label><input type="radio" name="Year" value="Sophomore"> Sophomore</label>
+                    <label><input type="radio" name="Year" value="Junior"> Junior</label>
+                    <label><input type="radio" name="Year" value="Senior"> Senior</label>
+                </div>
+
+                <div class="form-group">
+                    <label><input type="checkbox" id="Agree" name="Agree" checked> Remember Me</label>
+                </div>
+
+                <div class="form-group">
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments" name="comments" rows="4" placeholder="Enter your comments..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit">Submit</button>
+                </div>
+
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        &copy; 2025 Maua Benson Jack
+    </footer>
+
+</body>
+</html>
