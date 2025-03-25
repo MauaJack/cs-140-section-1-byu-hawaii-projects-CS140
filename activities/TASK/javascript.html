@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Form</title>
+    <link rel="stylesheet" href="javascript.css">
+</head>
+<body>
+
+    <header>
+        <h1>WEB DESIGN</h1>
+    </header>
+
+    <main>
+        <form action="processing.html" method="get", id="myform">
+            <fieldset>
+                <legend>Account Info</legend>
+
+                <div class="form-group">
+                    <label for="firstName">Fullname:</label>
+                    <input type="text" id="firstName" name="FirstName" required placeholder="First Name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="Email" required placeholder="example@email.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="(123) 456-7890">
+                </div>
+
+                <div class="form-group">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="pass">Password:</label>
+                    <input type="password" id="pass" name="password" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="state">State:</label>
+                    <select id="state" name="state">
+                        <option value="">Select State</option>
+                        <option value="CO">Colorado</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="PNG">Papua New Guinea</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Year in School:</label>
+                    <label><input type="radio" name="Year" value="Freshman"> Freshman</label>
+                    <label><input type="radio" name="Year" value="Sophomore"> Sophomore</label>
+                    <label><input type="radio" name="Year" value="Junior"> Junior</label>
+                    <label><input type="radio" name="Year" value="Senior"> Senior</label>
+                </div>
+
+                <div class="form-group">
+                    <label><input type="checkbox" id="Agree" name="Agree" checked> Remember Me</label>
+                </div>
+
+                <div class="form-group">
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments" name="comments" rows="4" placeholder="Enter your comments..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit">Submit</button>
+                </div>
+
+            </fieldset>
+        </form>
+
+        <h1>ENGAGEMENT</h1>
+        <h2><p>Answer these questions on your page:</p></h2>
+        <ol class="1">
+            <li>What is JavaScript? How did it get its name?<p>JavaScript is a versatile, high-level programming language used primarily for web development to create interactive and dynamic web pages.
+
+                It got its name as a marketing strategy by Netscape to leverage the popularity of Java, even though JavaScript and Java are fundamentally different languages.</p></li>
+            <li>What are the two ways you can run JavaScript?<p>JavaScript can be run in a web browser using its built-in JavaScript engine or on a server using a runtime environment like Node.js.</p></li>
+            <li>What was the most popular front-end js library?<p>jQuery was the most popular front-end JavaScript library for many years due to its ease of use and cross-browser compatibility.</p></li>
+            <li>What is the most popular front-end js library today?<p>Today, React.js is the most popular front-end JavaScript library, widely used for building dynamic and scalable web applications.</p></li>
+        </ol>
+    </main>
+    <footer>
+        <script>
+            document.getElementById('myform').addEventListener('submit', function(event){
+                event.preventDefault();
+                alert("form submitted");
+    
+                const fullname = document.getElementById('firstName').value;
+                console.log(fullname);
+            });
+        </script>
+        &copy; 2025 Maua Benson Jack
+    </footer>
+
+</body>
+</html>
