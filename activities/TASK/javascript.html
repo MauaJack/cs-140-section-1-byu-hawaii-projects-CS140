@@ -75,18 +75,13 @@
 
             </fieldset>
         </form>
-
-        <h1>ENGAGEMENT</h1>
-        <h2><p>Answer these questions on your page:</p></h2>
-        <ol class="1">
-            <li>What is JavaScript? How did it get its name?<p>JavaScript is a versatile, high-level programming language used primarily for web development to create interactive and dynamic web pages.
-
-                It got its name as a marketing strategy by Netscape to leverage the popularity of Java, even though JavaScript and Java are fundamentally different languages.</p></li>
-            <li>What are the two ways you can run JavaScript?<p>JavaScript can be run in a web browser using its built-in JavaScript engine or on a server using a runtime environment like Node.js.</p></li>
-            <li>What was the most popular front-end js library?<p>jQuery was the most popular front-end JavaScript library for many years due to its ease of use and cross-browser compatibility.</p></li>
-            <li>What is the most popular front-end js library today?<p>Today, React.js is the most popular front-end JavaScript library, widely used for building dynamic and scalable web applications.</p></li>
-        </ol>
     </main>
+
+    <h1>Engagement</h1>
+    <ol class="1">
+            <li>What is AJAX?<p>AJAX (Asynchronous JavaScript and XML) is a web development technique that allows for the asynchronous loading of data from a server without refreshing the entire web page, enabling more dynamic and responsive user interfaces.</p></li>
+            <li>Why do you put your JS Code in a separate file?<p>Putting JavaScript code in a separate file promotes better organization, reusability, and maintainability of code, while also improving page load times through caching.</p></li>
+    </ol>
     <footer>
         <script>
             document.getElementById('myform').addEventListener('submit', function(event){
@@ -95,6 +90,18 @@
     
                 const fullname = document.getElementById('firstName').value;
                 console.log(fullname);
+                const xhr = new XMLHttpRequest();
+                xhr.open("get", "submit.json", true);
+                xhr.setRequestHeader("context-type", "application/json;charset=UTF-8");
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState === 4 && xhr.sattes=== 200) {
+                        alert ('form submitted successful.');
+                    } else if (xhr.readyState === 4) {
+                        alert ('error submitting form.');
+                    }
+                }
+                xhr.send(JSON. stringify(formdata));
+                alert('success: ${firstname}${lastname}');
             });
         </script>
         &copy; 2025 Maua Benson Jack
