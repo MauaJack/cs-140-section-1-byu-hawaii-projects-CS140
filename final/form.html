@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | PNG Culture</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <header>
+    <h1>Contact Us</h1>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="dailylife.html">Daily Life</a></li>
+        <li><a href="traditionalfood.html">Traditional Food</a></li>
+        <li><a href="festival.html">Festivals</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="form.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Get in Touch</h2>
+      <p>We'd love to hear your thoughts or questions about Papua New Guinea's culture!</p>
+      <form action="form-handler.php" method="POST">
+        <label for="name">Full Name:</label><br />
+        <input type="text" id="name" name="name" required /><br />
+
+        <label for="email">Email Address:</label><br />
+        <input type="email" id="email" name="email" required /><br />
+
+        <label for="subject">Subject:</label><br />
+        <input type="text" id="subject" name="subject" /><br />
+
+        <label for="message">Your Message:</label><br />
+        <textarea id="message" name="message" rows="5" required></textarea><br />
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+   
+  </main>
+
+  <footer>
+    <p>© 2025 PNG Culture</p>
+    <p>References:
+      <a href="https://www.papuanewguinea.travel/contact-us">PNG Tourism - Contact</a>,
+      <a href="https://en.wikipedia.org/wiki/Papua_New_Guinea">Wikipedia</a>
+    </p>
+  </footer>
+</body>
+</html>
